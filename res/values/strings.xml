@@ -11,5 +11,19 @@
     <string name="title_activity_act__menu">Act_Menu</string>
     <string name="acerca_de_txt">Tessie. Nacido en Abril de 2014, Tessie es un establecimiento de venta y consumo de alimentos ficticio, inventado con el motivo de servir como establecimiento piloto para la implementación de una plataforma automatizada para la atención al cliente. Creado por Ronny Ayala y Natasha Martínez, como parte de sus objetivos a cumplir para optar por la obtención del título de Ingenieros en Telecomunicaciones, en la Universidad Católica Andrés Bello</string>
     <string name="title_activity_act_acercade">Act_acercade</string>
+    <string name="title_activity_act__registro_u">Act_RegistroU</string>
+    <string name="nombre_usuario_hint">Nombres</string>
+    <string name="nombre_usuario"></string>
+    <string name="apellido_usuario"></string>
+    <string name="cedula_usuario"></string>
+    <string name="apellido_usuario_hint">Apellidos</string>
+    <string name="cedula_usuario_hint">Cédula</string>
+    <string name="telefono_signup">Teléfono móvil</string>
+    <string name="contrasena_signup"></string>
+    <string name="contrasena_signup_hint">Contraseña</string>
+    <string name="confirmar_contrasena_signup_hint">Confirme su contraseña</string>
+    <string name="prompt_email">Correo</string>
+    <string name="acion_sign_up">REGISTRARSE</string>
+    <string name="but_realizar_pedido">Realizar Pedido</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.ayalamart.appkiosco;
+package com.ayalamart.helper;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;

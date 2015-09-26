@@ -13,12 +13,17 @@ import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.ayalamart.adapter.CustomListAdapter;
 import com.ayalamart.adapter.CustomListAdapter.BtnClickListener;
+import com.ayalamart.helper.AppController;
 import com.ayalamart.modelo.Plato;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -39,6 +44,18 @@ public class Act_Menu extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_act__menu);
 		
+		Button but_realizarpedido = (Button)findViewById(R.id.button1); 
+		but_realizarpedido.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent_registrardatos = new Intent(getApplicationContext(), Act_Signup.class); 
+				startActivity(intent_registrardatos);
+				
+			}
+		});
+		
+
 		listView = (ListView)findViewById(R.id.LV_menu); 
 		adapter = new CustomListAdapter(this, listaPlato, new BtnClickListener() {
 			
