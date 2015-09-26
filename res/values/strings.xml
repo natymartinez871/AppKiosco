@@ -23,7 +23,8 @@
     <string name="contrasena_signup_hint">Contraseña</string>
     <string name="confirmar_contrasena_signup_hint">Confirme su contraseña</string>
     <string name="prompt_email">Correo</string>
-    <string name="acion_sign_up">REGISTRARSE</string>
+    <string name="acion_sign_up">REALIZAR PEDIDO</string>
     <string name="but_realizar_pedido">Realizar Pedido</string>
+    <string name="title_activity_act_detallepedido">Act_detallepedido</string>
 
 </resources>

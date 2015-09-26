@@ -55,9 +55,6 @@ public class Act_Signup extends Activity {
         pDialog.setMessage("Por favor espere...");
         pDialog.setCancelable(false);
 
-		//declarando el mensaje de error, y colocandole el mismo color de fondo para esconderlo 
-		final TextView mensaje_error = (TextView)findViewById(R.id.alerta_contr_no_match); 
-		mensaje_error.setBackgroundColor(Color.parseColor("#96B497"));
 
 		Button button_signup = (Button) findViewById(R.id.but_signup);
 		button_signup.setOnClickListener(new OnClickListener() {		
@@ -84,8 +81,7 @@ public class Act_Signup extends Activity {
 					if (validarDatos(nombre_str, cedula_str, correo_str, telefono_str)) {
 							//si el password es valido, entra al siguiente ciclo 
 								String match = " ";
-								mensaje_error.setBackgroundColor(Color.parseColor("#96B497"));
-								mensaje_error.setText(match);
+								
 								Long idcliente = new Long(0); 
 								String json = "{"+"apeCliente"+":"+apellido_str+","+"cedCliente"+":"+cedula_str+","+
 										"emailCliente"+":"+correo_str+","+"estatus"+":"+"1"+","+"idCliente"+":"+idcliente+","+
@@ -120,7 +116,7 @@ public class Act_Signup extends Activity {
 								Log.d(TAG, "LOGRO REGISTRARSE"); 
 								hidepDialog();
 								
-								Intent intent_ppal = new Intent(getApplicationContext(), ActPrincipal.class); 
+								Intent intent_ppal = new Intent(getApplicationContext(), Act_detallepedido.class); 
 								intent_ppal.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); 
 								intent_ppal.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
 								startActivity(intent_ppal);
